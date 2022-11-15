@@ -11,12 +11,10 @@ public class Main {
             //Class.forName("com.mysql.cj.jdbc.Driver");
 
 
-        Connection con = Conezion.abrirConexion("ad2223_caguilar","1234","jdbc:mysql://dns11036.phdns11.es/ad2223_caguilar");
-        try {
-            transaccion(con);
-        } catch (SQLException e) {
-            System.out.println("Ze mamó");
-        }
+        Connection con = Conezion.abrirConexion("ad2223_caguilar","Patatitasexy69","jdbc:mysql://dns11036.phdns11.es/ad2223_caguilar");
+
+            ChangePass.cambiarPassword();
+
     }
 
     public static void transaccion(Connection con) throws SQLException {
